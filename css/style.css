@@ -459,9 +459,9 @@ h1 span, h2 em {
 }
 
 
-.image-lab { 
-  background: #d5e6f4; 
-  color: #102c47;
+.image-lab {
+  background: #f4e7d2;
+  color: #263a2a;
 }
 
 
@@ -493,15 +493,15 @@ h1 span, h2 em {
 }
 
 
-.lab-circle { 
-  width: 110px; 
-  height: 110px;
-  border-radius: 50%; 
-  position: absolute; 
-  right: 0;
-  top: 35px; 
-  background: radial-gradient(circle at 30% 30%, #fff, #83b5e4 45%, #316b9f 70%);
-
+.lab-circle {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  position: absolute;
+  right: 16px;
+  top: 36px;
+  background: radial-gradient(circle, #f4e7d2 0 38%, #d95c3b 39% 43%, #f4e7d2 44% 56%, #77824c 57% 61%, #f4e7d2 62%);
+  box-shadow: 0 0 0 1px rgba(38,58,42,.12);
 }
 
 
@@ -839,6 +839,37 @@ h1 span, h2 em {
 }
 
 
+
+
+/* Trattoria Buono：レストランらしいトマト × クリーム × オリーブ */
+.image-lab .lab-art::after {
+  content: "✦";
+  position: absolute;
+  right: 22px;
+  bottom: 14px;
+  color: #d95c3b;
+  font-size: 28px;
+  line-height: 1;
+}
+
+.image-lab .lab-art::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100px;
+  right: 7px;
+  top: 36px;
+  border-radius: 4px;
+  background: #77824c;
+  box-shadow: -7px 0 0 -1px #77824c, 7px 0 0 -1px #77824c;
+  opacity: .9;
+}
+
+.image-lab .lab-art strong {
+  max-width: 78%;
+  font-family: Georgia, serif;
+  letter-spacing: -.06em;
+}
 
 /* ========================================
    WORKS ギャラリー改善
